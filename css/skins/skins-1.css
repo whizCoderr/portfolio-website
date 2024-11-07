@@ -1,0 +1,94 @@
+@media screen and (max-width: 1024px) {
+    .home-container {
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 20px;
+    }
+
+    .row-contents {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .navbar .nav-menu {
+        width: 100%;
+        padding: 12px;
+        max-width: 350px;
+        min-width: 280px;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        transform: translate(50%, 0%);
+        border-radius: var(--border-radius);
+        background: var(--card-bg-color);
+        display: block;
+        text-align: center;
+        opacity: 0;
+        transition: var(--ease-dur);
+        z-index: var(--intop);
+    }
+    
+    .navbar .nav-menu li {
+        margin: 0.9em 0;
+    }
+
+    .show-menu.nav-menu {
+        transform: translate(-100%, 0%);
+        opacity: 1;
+    }
+
+    .education-container::after {
+        left: 0;
+    }
+
+    .education-card {
+        width: 100%;
+        /* background-color: red; */
+        padding-right: 0;
+    }
+
+    .education-card.left .gra-icon {
+        left: -16px;
+    }
+
+    .right {
+        left: 0;
+    }
+
+    .education-card::after,
+    .education-card.right::after {
+        left: 0;
+    }
+
+    .contact-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .flex-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .info {
+        font-size: 0.8rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media screen and (max-width: 365px) {
+    section,
+    .info {
+        font-size: 0.6rem;
+    }
+}
