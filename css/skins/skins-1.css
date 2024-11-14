@@ -1,0 +1,91 @@
+/* Break Point - 1024px */
+@media screen and (max-width: 1024px) {
+    .particulars {
+        flex-direction: column;
+        gap: 1.25em;
+    }
+
+    .about .scroll{
+        margin-bottom: -1.5em;
+    }
+}
+
+/* Break Point - 991px */
+@media screen and (max-width: 991px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar .nav-menu {
+        width: 100%;
+        padding: 20px;
+        max-width: 399px;
+        background: var(--card-bg-color);
+        border-radius: var(--border-radius);
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        opacity: 0;
+        transition: var(--ease-dur-3);
+    }
+
+    .navbar .nav-menu li {
+        margin: 1.2em 0;
+    }
+
+    .show-menu.nav-menu {
+        right: 0%;
+        opacity: 1;
+    }
+
+    .education-grid::before {
+        left: 0;
+    }
+
+    .education-grid-card {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .education-card-icon {
+        left: -15px;
+    }
+
+    .education-grid-card::before,
+    .education-grid-card.right {
+        left: 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Break Point - 565px */
+@media screen and (max-width: 565px) {}
+
+/* Break Point - 465px */
+@media screen and (max-width: 465px) {
+    header,
+    section {
+        font-size: 0.8em;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+/* Break Point - 365px */
+@media screen and (max-width: 365px) {
+    header,
+    section {
+        font-size: 0.6em;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
